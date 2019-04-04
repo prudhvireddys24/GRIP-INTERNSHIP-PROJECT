@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Online Pharmacy</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img\bg-img\pharm2.jpg">
+
+    <!-- Core Stylesheet -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="css/responsive.css" rel="stylesheet">
+    <style>
+    	/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+
+
+.btn-1 {
+  background-color: #ff6f1e;
+}
+.btn-1 .round {
+  background-color: #f59965;
+}
+
+.btn-2 {
+  background-color: #5b32b4;
+}
+.btn-2 .round {
+  background-color: #9d77ef;
+}
+
+.btn-3 {
+  background-color: #ff6f1e;
+}
+.btn-3 .round {
+  background-color: #f59965;
+}
+.btn-4 {
+  background-color: #5b32b4;
+ 
+}
+.btn-4 .round {
+  background-color: #9d77ef;
+}
+
+a {
+  text-decoration: none;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  padding: 12px 53px 12px 23px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bold;
+  position: relative;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: inline-block;
+}
+a span {
+  position: relative;
+  z-index: 3;
+}
+a .round {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  z-index: 2;
+}
+a .round i {
+  position: absolute;
+  top: 50%;
+  margin-top: -6px;
+  left: 50%;
+  margin-left: -4px;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.txt {
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.type-1 a:hover {
+  padding-left: 48px;
+  padding-right: 28px;
+}
+.type-1 a:hover .round {
+  width: calc(100% - 6px);
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+}
+.type-1 a:hover .round i {
+  left: 12%;
+}
+
+.type-2 a:hover .round {
+  background: none;
+}
+.type-2 a:hover .round i {
+  left: 70%;
+}
+
+.type-3 .round {
+  background: transparent;
+}
+.type-3 a {
+  position: relative;
+  overflow: hidden;
+}
+.type-3 a.btn-1:after {
+  background-color: #f59965;
+}
+.type-3 a.btn-2:after {
+  background-color: #9d77ef;
+}
+.type-3 a.btn-3:after {
+  background-color: #f59965;
+}
+.type-3 a.btn-4:after {
+  background-color: #9d77ef;
+}
+.type-3 a:after {
+  content: "";
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 37px;
+  height: 38px;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.type-3 a:hover:after {
+  right: 100%;
+  width: 50%;
+}
+.type-3 a:hover i {
+  margin-left: 4px;
+}
+    </style>
+
+</head>
+
+<body>
+
+
+
+
+        <div class="row" id="operations">
+  <div class="column" align="center"  style="background-color:#ffffff;">
+      <h1>INSERT</h1>
+  <div class="type-3">
+  <div>
+    <a href="patient.php" class="btn btn-1">
+      <span class="txt">PATIENT---</span>
+      <span class="round"><i class="fa fa-chevron-right"></i></span>
+    </a>
+  </div>
+
+  <div>
+    <a href="doctor.php" class="btn btn-2" style="margin-top: 10px;">
+      <span class="txt">DOCTOR---</span>
+      <span class="round"><i class="fa fa-chevron-right"></i></span>
+    </a>
+  </div>
+  
+  <div>
+    <a href="store.php" class="btn btn-3" style="margin-top: 10px;">
+      <span class="txt">STORE-----</span>
+      <span class="round"><i class="fa fa-chevron-right"></i></span>
+    </a>
+  </div>
+  <div>
+    <a href="bill.php" class="btn btn-4" style="margin-top: 10px;">
+      <span class="txt">BILL------</span>
+      <span class="round"><i class="fa fa-chevron-right"></i></span>
+    </a>
+  </div>
+</div></div>
+  <div class="column" align="center"style="background-color: #ffffff">
+
+  <h1>RETRIEVE</h1>
+  <div class="type-3">
+  <div>
+  	
+    <a href="ret.php" class="btn btn-1">
+      <span class="txt">patient---</span>
+      <span class="round"><i class="fa fa-chevron-right"></i></span>
+    </a>
+  </div>
+
+  <div>
+    <a href="retdoc.php" class="btn btn-2" style="margin-top: 10px;">
+      <span class="txt">DOCTOR--</span>
+      <span class="round"><i class="fa fa-chevron-right"></i></span>
+    </a>
+  </div>
+  
+  <div>
+    <a href="retsto.php" class="btn btn-3" style="margin-top: 10px;">
+      <span class="txt">STORE---</span>
+      <span class="round"><i class="fa fa-chevron-right"></i></span>
+    </a>
+  </div>
+  <div>
+    <a href="retbill1.php" class="btn btn-4" style="margin-top: 10px;">
+      <span class="txt">BILL----</span>
+      <span class="round"><i class="fa fa-chevron-right"></i></span>
+    </a>
+  </div>
+   <div>
+    <a href="retmultiple.php" class="btn btn-3" style="margin-top: 10px;">
+      <span class="txt">get name and total</span>
+      <span class="round"><i class="fa fa-chevron-right"></i></span>
+    </a>
+  </div>
+
+  <div>
+  <a href="retmul1.php" class="btn btn-4" style="margin-top: 10px;">
+      <span class="txt">Get Booking Details</span>
+      <span class="round"><i class="fa fa-chevron-right"></i></span>
+    </a>
+  </div>
+  
+</div></div>
+  <div class="column" align="center" style="background-color:#ffffff;">
+
+
+  <h1>UPDATE</h1>
+  <div class="type-3">
+  <div>
+    <a href="uppatient.php" class="btn btn-1">
+      <span class="txt">ADDRESS</span>
+      <span class="round"><i class="fa fa-chevron-right"></i></span>
+    </a>
+  </div>
+
+  <div>
+    <a href="updoctor.php" class="btn btn-2" style="margin-top: 10px;">
+      <span class="txt">P_id-------</span>
+      <span class="round"><i class="fa fa-chevron-right"></i></span>
+    </a>
+  </div>
+  
+  <div>
+    <a href="upstore.php" class="btn btn-3" style="margin-top: 10px;">
+      <span class="txt">Quantity</span>
+      <span class="round"><i class="fa fa-chevron-right"></i></span>
+    </a>
+  </div>
+  <div>
+    <a href="upbill.php" class="btn btn-4" style="margin-top: 10px;">
+      <span class="txt">Total---</span>
+      <span class="round"><i class="fa fa-chevron-right"></i></span>
+    </a>
+  </div>
+</div></div>
+</div>
+<div align="center" style="background-color:#ffffff;">
+	<br>
+	<br>
+	<br>
+  
+  <h1>DELETE</h1>
+  <div class="type-3">
+  <div>
+    <a href="delpatient.php" class="btn btn-1">
+      <span class="txt">PATIENT</span>
+      <span class="round"><i class="fa fa-chevron-right"></i></span>
+    </a>
+  </div>
+
+  <div>
+    <a href="deldoctor.php" class="btn btn-2" style="margin-top: 10px;">
+      <span class="txt">DOCTOR</span>
+      <span class="round"><i class="fa fa-chevron-right"></i></span>
+    </a>
+  </div>
+  
+  <div>
+    <a href="delstore.php" class="btn btn-3" style="margin-top: 10px;">
+      <span class="txt">.STORE.</span>
+      <span class="round"><i class="fa fa-chevron-right"></i></span>
+    </a>
+  </div>
+  <div>
+    <a href="delbill1.php" class="btn btn-4" style="margin-top: 10px;">
+      <span class="txt">..BILL..</span>
+      <span class="round"><i class="fa fa-chevron-right"></i></span>
+    </a>
+  </div>
+</div></div>
+</div>
+
+
+
+    <!-- Jquery-2.2.4 JS -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap-4 Beta JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Plugins JS -->
+    <script src="js/plugins.js"></script>
+    <!-- Slick Slider Js-->
+    <script src="js/slick.min.js"></script>
+    <!-- Footer Reveal JS -->
+    <script src="js/footer-reveal.min.js"></script>
+    <!-- Active JS -->
+    <script src="js/active.js"></script>
+</body>
+
+</html>
